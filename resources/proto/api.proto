@@ -1,0 +1,28 @@
+syntax="proto3";
+
+package api_proto;
+
+import "google/api/annotations.proto";
+
+service DestinationAPI {
+    rpc AddDestination(Destination) returns (ApiResponse) {
+        option (google.api.http) = {
+            post: "/v1/destinations"
+            body: "*"
+        };
+    }
+}
+
+message ApiResponse {
+    int32 code = 1;
+    string message = 2;
+}
+
+message Destination {
+    string name = 1;
+    string description = 2;
+    double lat = 3;
+    double long = 4;
+    string phone = 5;
+    string url = 6;
+}

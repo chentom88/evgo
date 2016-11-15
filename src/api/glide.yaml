@@ -1,0 +1,16 @@
+package: api
+import:
+- package: google.golang.org/grpc
+  version: ^1.0.4
+- package: github.com/golang/protobuf
+- package: github.com/grpc-ecosystem/grpc-gateway
+  version: ^1.1.0
+  subpackages:
+  - protoc-gen-grpc-gateway
+  - protoc-gen-grpc-swagger
+- package: golang.org/x/net
+testImport:
+- package: github.com/onsi/ginkgo
+  version: ^1.2.0
+- package: github.com/onsi/gomega
+  version: ^1.0.0
