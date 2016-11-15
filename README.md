@@ -1,14 +1,14 @@
 # Prerequisites
 
-1. Install protobuf 3
-1. Install glide 
+* Install protobuf 3
+* Install glide 
 ```
 mkdir bin
 curl https://glide.sh/get | sh
 ```
 
-1. Make sure have include/google folder copied to /usr/local/include
-1. Make sure to install all dependencies, this will add submodule folders under src/.. you can delete them
+* Make sure have include/google folder copied to /usr/local/include
+* Make sure to install all dependencies, this will add submodule folders under src/.. you can delete them
 
 ```
 go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
